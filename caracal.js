@@ -99,10 +99,6 @@ var HANDLERS = {
   "permissionHandler": permissionHandler,
   "editHandler": auth.editHandler,
   "proxyHandler": proxyHandler,
-  "getDataset": DataSet.getDataset,
-  "trainModel": Model.trainModel,
-  "deleteDataset": DataSet.deleteData,
-  "sendTrainedModel": Model.sendTrainedModel,
   "iipHandler": function() {
     return iipHandler;
   },
