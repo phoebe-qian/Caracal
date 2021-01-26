@@ -1,6 +1,5 @@
-FROM node:14-stretch-slim
-RUN apt-get update  &&  apt-get upgrade -y  &&  apt-get install -y git build-essential python3
-RUN mkdir /src
+FROM node:12-alpine
+RUN apk add gitRUN mkdir /src
 COPY . /src
 WORKDIR /src
 RUN npm install
