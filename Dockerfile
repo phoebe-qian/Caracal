@@ -1,5 +1,6 @@
 FROM node:12-alpine
-RUN apk add gitRUN mkdir /src
+RUN apk add git
+RUN mkdir /src
 COPY . /src
 WORKDIR /src
 RUN npm install
